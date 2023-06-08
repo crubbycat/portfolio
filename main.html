@@ -2,9 +2,74 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="author" content="Freddie S-K">
+    <meta name="description" content="my portfolio">
+    <title>Welcome!</title>
+    <link rel="Stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
 
+<body>
+    <div class="sidebar">
+        <!-- this is for the menu collapse/expand button -->
+        <div class="top">
+            <button class="minButton">
+                <i class='bx bx-chevrons-left'></i>
+            </button>
+        </div>
+
+        <!-- this is for the profile (photo/name/contact) panel -->
+        <div class="profile">
+            <img src="cat.jpg" alt="cat" class="catPic">
+            <p class="myName">SUNG KIM</p>
+            <div class="contactIcon">
+                <a href="#" class="snsIcon">
+                    <i class='bx bxl-github' ></i>
+                </a>
+                <a href="#" class="snsIcon">
+                    <i class='bx bxl-instagram-alt' ></i>
+                </a>
+                <a href="#" class="snsIcon">
+                    <i class='bx bxs-envelope' ></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- this is for the menus -->
+        <ul class="menuList">
+            <li>
+                <a href="#">
+                    <span class="menuItem">ABOUT ME</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="menuItem">WHAT I DO</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="menuItem">CONTACT ME</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="mainContent">
+        <div class="mainImage">
+            <h1>MAIN CONTENT</h1>
+        </div>
+    </div>
 </body>
+
+<!-- script for sidebar menu -->
+<script>
+    let btn = document.querySelector('#btn');
+    let sidebar = document.querySelector('.sidebar');
+
+    btn.oneclick = function () {
+        sidebar.classList.toggle('minimize');
+    };
+</script>
 </html>

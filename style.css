@@ -1,0 +1,128 @@
+/*
+dark green 226f54
+light green 87c38f
+beige f4f0bb
+dark brown background 43291f
+ */
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Shadow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Contrail+One&family=Londrina+Shadow&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.catPic{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid #87c38f
+}
+
+.myName{
+    font-family: 'Londrina Shadow', cursive;
+    font-weight: bold;
+    color: #f4f0bb;
+    font-size: 50px;
+    letter-spacing: 5px;
+}
+
+.sidebar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 40%;
+    background-color: #226f54;
+    padding: 0.4rem 0.8rem;
+    transition: all 0.5s ease;
+}
+
+
+.sidebar.minimize {
+    width: 10%;
+}
+
+.sidebar #btn {
+    transform: translateX(-35%);
+    cursor: pointer;
+}
+
+.sidebar .top .profile .menuList {
+    display: flex;
+    align-items: center;
+    pointer-events: none;
+    opacity: 0;
+}
+
+.top{
+    text-align: right;
+}
+
+.minButton{
+    background-color: transparent;
+    color: #f4f0bb;
+    border: none;
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+}
+.minButton:hover{
+    background-color: #87c38f;
+    color: #226f54;
+}
+
+.contactIcon{
+    font-size: 25px;
+    font-weight: bold;
+    color: #f4f0bb;
+    text-align: center;
+}
+
+.profile{
+    top: 50%;
+    left: 50%;
+    height: 30%;
+    align-items: center;
+    text-align: center;
+    vertical-align: center;
+}
+
+.menuList{
+    list-style-type: none;
+    font-family: 'Contrail One', cursive;
+    font-size: 30px;
+    color: #f4f0bb;
+    height: 70%;
+    text-align: center;
+}
+
+.snsIcon{
+    text-decoration: none;
+}
+.snsIcon:link, .snsIcon:visited{
+    color: #87c38f;
+}
+.snsIcon:hover{
+    color: #f4f0bb;
+}
+
+.menuList a{
+    text-decoration: none;
+}
+.menuList a:link, a:visited{
+    text-decoration: none;
+    color: #f4f0bb;
+}
+.menuList a:hover{
+    background-color: #f4f0bb;
+    color: #226f54;
+}
+
+
+
+.mainContent{
+    height: 100vh;
+    background-color: #87c38f;
+}
