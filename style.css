@@ -32,17 +32,13 @@ dark brown background 43291f
     position: absolute;
     top: 0;
     left: 0;
-    height: 100vh;
+    height: 100%;
     width: 40%;
     background-color: #226f54;
     padding: 0.4rem 0.8rem;
-    transition: all 0.5s ease;
+    transition: all 0.9s ease;
 }
 
-
-.sidebar.minimize {
-    width: 10%;
-}
 
 .sidebar #btn {
     transform: translateX(-35%);
@@ -81,12 +77,16 @@ dark brown background 43291f
 }
 
 .profile{
+    height: 40%;
+    text-align: center;
+    position: relative;
+}
+
+.sidebarUp {
+    position: absolute;
     top: 50%;
     left: 50%;
-    height: 30%;
-    align-items: center;
-    text-align: center;
-    vertical-align: center;
+    transform: translate(-50%, -50%);
 }
 
 .menuList{
@@ -94,7 +94,7 @@ dark brown background 43291f
     font-family: 'Contrail One', cursive;
     font-size: 30px;
     color: #f4f0bb;
-    height: 70%;
+    height: 60%;
     text-align: center;
 }
 
@@ -123,9 +123,19 @@ dark brown background 43291f
     color: #226f54;
 }
 
+.sidebar.collapse {
+    width: 5rem;
+}
 
-
-.mainContent{
+.background {
     height: 100vh;
     background-color: #87c38f;
+}
+
+.aboutMe {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    background-color: #43291f;
 }

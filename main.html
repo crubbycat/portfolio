@@ -21,55 +21,78 @@
 
         <!-- this is for the profile (photo/name/contact) panel -->
         <div class="profile">
-            <img src="cat.jpg" alt="cat" class="catPic">
-            <p class="myName">SUNG KIM</p>
-            <div class="contactIcon">
-                <a href="#" class="snsIcon">
-                    <i class='bx bxl-github' ></i>
-                </a>
-                <a href="#" class="snsIcon">
-                    <i class='bx bxl-instagram-alt' ></i>
-                </a>
-                <a href="#" class="snsIcon">
-                    <i class='bx bxs-envelope' ></i>
-                </a>
+            <div class = "sidebarUp">
+                <img src="cat.jpg" alt="cat" class="catPic">
+                <p class="myName">SUNG KIM</p>
+                <div class="contactIcon">
+                    <a href="#" class="snsIcon">
+                        <i class='bx bxl-github' ></i>
+                    </a>
+                    <a href="#" class="snsIcon">
+                        <i class='bx bxl-instagram-alt' ></i>
+                    </a>
+                    <a href="#" class="snsIcon">
+                        <i class='bx bxs-envelope' ></i>
+                    </a>
+                </div>
             </div>
         </div>
 
         <!-- this is for the menus -->
-        <ul class="menuList">
-            <li>
-                <a href="#">
-                    <span class="menuItem">ABOUT ME</span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <span class="menuItem">WHAT I DO</span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <span class="menuItem">CONTACT ME</span>
-                </a>
-            </li>
-        </ul>
+        <div class="sidebarDown">
+            <ul class="menuList">
+                <li>
+                    <a href="#">
+                        <span class="menuItem">ABOUT ME</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="menuItem">WHAT I DO</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="menuItem">CONTACT ME</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
     </div>
 
-    <div class="mainContent">
+    <!-- div for background photos/splash -->
+    <div class="background">
         <div class="mainImage">
             <h1>MAIN CONTENT</h1>
         </div>
     </div>
+
+    <!-- div for "about me" -->
+    <div class="aboutMe">
+
+    </div>
+
+    <!-- div for "what I do" -->
+    <div class="whatIdo">
+
+    </div>
+
+    <!-- div for "contact me" -->
+    <div class="contactMe">
+
+    </div>
 </body>
 
 <!-- script for sidebar menu -->
-<script>
-    let btn = document.querySelector('#btn');
-    let sidebar = document.querySelector('.sidebar');
+<script type="text/javascript">
+    {
+        let sidebar = document.querySelector('.sidebar');
+        let minBtn = document.querySelector('.minButton');
+        let menuItem = document.querySelector('.menuList');
+        minBtn.onclick = () => {
+            sidebar.classList.toggle('collapse');
+        }
 
-    btn.oneclick = function () {
-        sidebar.classList.toggle('minimize');
-    };
+    }
 </script>
 </html>
