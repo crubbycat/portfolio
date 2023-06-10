@@ -109,6 +109,9 @@ dark brown background 43291f
 }
 
 .menuList a{
+    margin: 0 -.25rem;
+    padding: 0 .25rem;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
     text-decoration: none;
 }
 .menuList a:link, a:visited{
@@ -116,7 +119,7 @@ dark brown background 43291f
     color: #f4f0bb;
 }
 .menuList a:hover{
-    background-color: #f4f0bb;
+    box-shadow: inset 150px 0 0 0 #f4f0bb;
     color: #226f54;
 }
 
